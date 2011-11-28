@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		684005C814831BE10026F828 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684005C714831BE10026F828 /* UIKit.framework */; };
+		684005CA14831BE10026F828 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684005C914831BE10026F828 /* Foundation.framework */; };
+		684005CC14831BE10026F828 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684005CB14831BE10026F828 /* CoreGraphics.framework */; };
+		684005D214831BE10026F828 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 684005D014831BE10026F828 /* InfoPlist.strings */; };
+		684005D414831BE10026F828 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684005D314831BE10026F828 /* main.m */; };
+		684005D814831BE10026F828 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684005D714831BE10026F828 /* AppDelegate.m */; };
+		684005DB14831BE10026F828 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684005D914831BE10026F828 /* MainStoryboard.storyboard */; };
+		684005DE14831BE10026F828 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684005DD14831BE10026F828 /* ViewController.m */; };
+		684005E614831BE20026F828 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684005E514831BE20026F828 /* SenTestingKit.framework */; };
+		684005E714831BE20026F828 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684005C714831BE10026F828 /* UIKit.framework */; };
+		684005E814831BE20026F828 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684005C914831BE10026F828 /* Foundation.framework */; };
+		684005F014831BE20026F828 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 684005EE14831BE20026F828 /* InfoPlist.strings */; };
+		684005F314831BE20026F828 /* picr_ipadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 684005F214831BE20026F828 /* picr_ipadTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		684005E914831BE20026F828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 684005BA14831BE10026F828 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 684005C214831BE10026F828;
+			remoteInfo = "picr-ipad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		684005C314831BE10026F828 /* picr-ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "picr-ipad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		684005C714831BE10026F828 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		684005C914831BE10026F828 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		684005CB14831BE10026F828 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		684005CF14831BE10026F828 /* picr-ipad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "picr-ipad-Info.plist"; sourceTree = "<group>"; };
+		684005D114831BE10026F828 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		684005D314831BE10026F828 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		684005D514831BE10026F828 /* picr-ipad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "picr-ipad-Prefix.pch"; sourceTree = "<group>"; };
+		684005D614831BE10026F828 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		684005D714831BE10026F828 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		684005DA14831BE10026F828 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		684005DC14831BE10026F828 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		684005DD14831BE10026F828 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		684005E414831BE20026F828 /* picr-ipadTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "picr-ipadTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		684005E514831BE20026F828 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		684005ED14831BE20026F828 /* picr-ipadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "picr-ipadTests-Info.plist"; sourceTree = "<group>"; };
+		684005EF14831BE20026F828 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		684005F114831BE20026F828 /* picr_ipadTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = picr_ipadTests.h; sourceTree = "<group>"; };
+		684005F214831BE20026F828 /* picr_ipadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = picr_ipadTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		684005C014831BE10026F828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684005C814831BE10026F828 /* UIKit.framework in Frameworks */,
+				684005CA14831BE10026F828 /* Foundation.framework in Frameworks */,
+				684005CC14831BE10026F828 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684005E014831BE20026F828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684005E614831BE20026F828 /* SenTestingKit.framework in Frameworks */,
+				684005E714831BE20026F828 /* UIKit.framework in Frameworks */,
+				684005E814831BE20026F828 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		684005B814831BE10026F828 = {
+			isa = PBXGroup;
+			children = (
+				684005CD14831BE10026F828 /* picr-ipad */,
+				684005EB14831BE20026F828 /* picr-ipadTests */,
+				684005C614831BE10026F828 /* Frameworks */,
+				684005C414831BE10026F828 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		684005C414831BE10026F828 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				684005C314831BE10026F828 /* picr-ipad.app */,
+				684005E414831BE20026F828 /* picr-ipadTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		684005C614831BE10026F828 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				684005C714831BE10026F828 /* UIKit.framework */,
+				684005C914831BE10026F828 /* Foundation.framework */,
+				684005CB14831BE10026F828 /* CoreGraphics.framework */,
+				684005E514831BE20026F828 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		684005CD14831BE10026F828 /* picr-ipad */ = {
+			isa = PBXGroup;
+			children = (
+				684005D614831BE10026F828 /* AppDelegate.h */,
+				684005D714831BE10026F828 /* AppDelegate.m */,
+				684005D914831BE10026F828 /* MainStoryboard.storyboard */,
+				684005DC14831BE10026F828 /* ViewController.h */,
+				684005DD14831BE10026F828 /* ViewController.m */,
+				684005CE14831BE10026F828 /* Supporting Files */,
+			);
+			path = "picr-ipad";
+			sourceTree = "<group>";
+		};
+		684005CE14831BE10026F828 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				684005CF14831BE10026F828 /* picr-ipad-Info.plist */,
+				684005D014831BE10026F828 /* InfoPlist.strings */,
+				684005D314831BE10026F828 /* main.m */,
+				684005D514831BE10026F828 /* picr-ipad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		684005EB14831BE20026F828 /* picr-ipadTests */ = {
+			isa = PBXGroup;
+			children = (
+				684005F114831BE20026F828 /* picr_ipadTests.h */,
+				684005F214831BE20026F828 /* picr_ipadTests.m */,
+				684005EC14831BE20026F828 /* Supporting Files */,
+			);
+			path = "picr-ipadTests";
+			sourceTree = "<group>";
+		};
+		684005EC14831BE20026F828 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				684005ED14831BE20026F828 /* picr-ipadTests-Info.plist */,
+				684005EE14831BE20026F828 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		684005C214831BE10026F828 /* picr-ipad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 684005F614831BE20026F828 /* Build configuration list for PBXNativeTarget "picr-ipad" */;
+			buildPhases = (
+				684005BF14831BE10026F828 /* Sources */,
+				684005C014831BE10026F828 /* Frameworks */,
+				684005C114831BE10026F828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "picr-ipad";
+			productName = "picr-ipad";
+			productReference = 684005C314831BE10026F828 /* picr-ipad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		684005E314831BE20026F828 /* picr-ipadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 684005F914831BE20026F828 /* Build configuration list for PBXNativeTarget "picr-ipadTests" */;
+			buildPhases = (
+				684005DF14831BE20026F828 /* Sources */,
+				684005E014831BE20026F828 /* Frameworks */,
+				684005E114831BE20026F828 /* Resources */,
+				684005E214831BE20026F828 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				684005EA14831BE20026F828 /* PBXTargetDependency */,
+			);
+			name = "picr-ipadTests";
+			productName = "picr-ipadTests";
+			productReference = 684005E414831BE20026F828 /* picr-ipadTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		684005BA14831BE10026F828 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 684005BD14831BE10026F828 /* Build configuration list for PBXProject "picr-ipad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 684005B814831BE10026F828;
+			productRefGroup = 684005C414831BE10026F828 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				684005C214831BE10026F828 /* picr-ipad */,
+				684005E314831BE20026F828 /* picr-ipadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		684005C114831BE10026F828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684005D214831BE10026F828 /* InfoPlist.strings in Resources */,
+				684005DB14831BE10026F828 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684005E114831BE20026F828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684005F014831BE20026F828 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		684005E214831BE20026F828 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		684005BF14831BE10026F828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684005D414831BE10026F828 /* main.m in Sources */,
+				684005D814831BE10026F828 /* AppDelegate.m in Sources */,
+				684005DE14831BE10026F828 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		684005DF14831BE20026F828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684005F314831BE20026F828 /* picr_ipadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		684005EA14831BE20026F828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 684005C214831BE10026F828 /* picr-ipad */;
+			targetProxy = 684005E914831BE20026F828 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		684005D014831BE10026F828 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				684005D114831BE10026F828 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		684005D914831BE10026F828 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				684005DA14831BE10026F828 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		684005EE14831BE20026F828 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				684005EF14831BE20026F828 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		684005F414831BE20026F828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		684005F514831BE20026F828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		684005F714831BE20026F828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "picr-ipad/picr-ipad-Prefix.pch";
+				INFOPLIST_FILE = "picr-ipad/picr-ipad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		684005F814831BE20026F828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "picr-ipad/picr-ipad-Prefix.pch";
+				INFOPLIST_FILE = "picr-ipad/picr-ipad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		684005FA14831BE20026F828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/picr-ipad.app/picr-ipad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "picr-ipad/picr-ipad-Prefix.pch";
+				INFOPLIST_FILE = "picr-ipadTests/picr-ipadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		684005FB14831BE20026F828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/picr-ipad.app/picr-ipad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "picr-ipad/picr-ipad-Prefix.pch";
+				INFOPLIST_FILE = "picr-ipadTests/picr-ipadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		684005BD14831BE10026F828 /* Build configuration list for PBXProject "picr-ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684005F414831BE20026F828 /* Debug */,
+				684005F514831BE20026F828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		684005F614831BE20026F828 /* Build configuration list for PBXNativeTarget "picr-ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684005F714831BE20026F828 /* Debug */,
+				684005F814831BE20026F828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		684005F914831BE20026F828 /* Build configuration list for PBXNativeTarget "picr-ipadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684005FA14831BE20026F828 /* Debug */,
+				684005FB14831BE20026F828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 684005BA14831BE10026F828 /* Project object */;
+}
