@@ -13,13 +13,23 @@
 		684005D214831BE10026F828 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 684005D014831BE10026F828 /* InfoPlist.strings */; };
 		684005D414831BE10026F828 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 684005D314831BE10026F828 /* main.m */; };
 		684005D814831BE10026F828 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 684005D714831BE10026F828 /* AppDelegate.m */; };
-		684005DB14831BE10026F828 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684005D914831BE10026F828 /* MainStoryboard.storyboard */; };
 		684005DE14831BE10026F828 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684005DD14831BE10026F828 /* ViewController.m */; };
 		684005E614831BE20026F828 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684005E514831BE20026F828 /* SenTestingKit.framework */; };
 		684005E714831BE20026F828 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684005C714831BE10026F828 /* UIKit.framework */; };
 		684005E814831BE20026F828 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684005C914831BE10026F828 /* Foundation.framework */; };
 		684005F014831BE20026F828 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 684005EE14831BE20026F828 /* InfoPlist.strings */; };
 		684005F314831BE20026F828 /* picr_ipadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 684005F214831BE20026F828 /* picr_ipadTests.m */; };
+		6840060514831D8E0026F828 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 6840060414831D8E0026F828 /* Server.m */; };
+		6840060814831DD20026F828 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6840060714831DD20026F828 /* Connection.m */; };
+		6840060C14831E1A0026F828 /* ServerBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6840060B14831E1A0026F828 /* ServerBrowser.m */; };
+		6840061214831E9F0026F828 /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6840061114831E9F0026F828 /* AppConfig.m */; };
+		68400616148325F30026F828 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68400615148325F30026F828 /* WelcomeViewController.m */; };
+		68400619148326940026F828 /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68400618148326940026F828 /* ChatRoomViewController.m */; };
+		6840061D148326E00026F828 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 6840061C148326E00026F828 /* Room.m */; };
+		68400623148327730026F828 /* RemoteRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 68400622148327730026F828 /* RemoteRoom.m */; };
+		684006261483278F0026F828 /* LocalRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 684006251483278E0026F828 /* LocalRoom.m */; };
+		68400629148328750026F828 /* UITextView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 68400628148328750026F828 /* UITextView+Utils.m */; };
+		6840062C14832D5B0026F828 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6840062B14832D5B0026F828 /* WelcomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +53,6 @@
 		684005D514831BE10026F828 /* picr-ipad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "picr-ipad-Prefix.pch"; sourceTree = "<group>"; };
 		684005D614831BE10026F828 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		684005D714831BE10026F828 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		684005DA14831BE10026F828 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		684005DC14831BE10026F828 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		684005DD14831BE10026F828 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		684005E414831BE20026F828 /* picr-ipadTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "picr-ipadTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +61,31 @@
 		684005EF14831BE20026F828 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		684005F114831BE20026F828 /* picr_ipadTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = picr_ipadTests.h; sourceTree = "<group>"; };
 		684005F214831BE20026F828 /* picr_ipadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = picr_ipadTests.m; sourceTree = "<group>"; };
+		6840060114831D560026F828 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		6840060414831D8E0026F828 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
+		6840060614831DD20026F828 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		6840060714831DD20026F828 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
+		6840060914831E080026F828 /* ServerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerDelegate.h; sourceTree = "<group>"; };
+		6840060A14831E190026F828 /* ServerBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerBrowser.h; sourceTree = "<group>"; };
+		6840060B14831E1A0026F828 /* ServerBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerBrowser.m; sourceTree = "<group>"; };
+		6840060D14831E440026F828 /* ServerBrowserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerBrowserDelegate.h; sourceTree = "<group>"; };
+		6840060E14831E760026F828 /* ConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionDelegate.h; sourceTree = "<group>"; };
+		6840061014831E9F0026F828 /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		6840061114831E9F0026F828 /* AppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
+		68400614148325F30026F828 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		68400615148325F30026F828 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		68400617148326940026F828 /* ChatRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomViewController.h; sourceTree = "<group>"; };
+		68400618148326940026F828 /* ChatRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomViewController.m; sourceTree = "<group>"; };
+		6840061B148326E00026F828 /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		6840061C148326E00026F828 /* Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
+		6840061E148327590026F828 /* RoomDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomDelegate.h; sourceTree = "<group>"; };
+		68400621148327730026F828 /* RemoteRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteRoom.h; sourceTree = "<group>"; };
+		68400622148327730026F828 /* RemoteRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteRoom.m; sourceTree = "<group>"; };
+		684006241483278E0026F828 /* LocalRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalRoom.h; sourceTree = "<group>"; };
+		684006251483278E0026F828 /* LocalRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalRoom.m; sourceTree = "<group>"; };
+		68400627148328750026F828 /* UITextView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Utils.h"; sourceTree = "<group>"; };
+		68400628148328750026F828 /* UITextView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Utils.m"; sourceTree = "<group>"; };
+		6840062B14832D5B0026F828 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +145,11 @@
 		684005CD14831BE10026F828 /* picr-ipad */ = {
 			isa = PBXGroup;
 			children = (
-				684005D614831BE10026F828 /* AppDelegate.h */,
-				684005D714831BE10026F828 /* AppDelegate.m */,
-				684005D914831BE10026F828 /* MainStoryboard.storyboard */,
-				684005DC14831BE10026F828 /* ViewController.h */,
-				684005DD14831BE10026F828 /* ViewController.m */,
+				6840062A14832D1F0026F828 /* Resources */,
+				6840061A148326D30026F828 /* Business Logic */,
+				68400613148325DD0026F828 /* UI */,
+				6840060F14831E8B0026F828 /* Misc */,
+				6840060014831D260026F828 /* Networking */,
 				684005CE14831BE10026F828 /* Supporting Files */,
 			);
 			path = "picr-ipad";
@@ -149,6 +183,70 @@
 				684005EE14831BE20026F828 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6840060014831D260026F828 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6840060114831D560026F828 /* Server.h */,
+				6840060414831D8E0026F828 /* Server.m */,
+				6840060914831E080026F828 /* ServerDelegate.h */,
+				6840060614831DD20026F828 /* Connection.h */,
+				6840060E14831E760026F828 /* ConnectionDelegate.h */,
+				6840060714831DD20026F828 /* Connection.m */,
+				6840060A14831E190026F828 /* ServerBrowser.h */,
+				6840060B14831E1A0026F828 /* ServerBrowser.m */,
+				6840060D14831E440026F828 /* ServerBrowserDelegate.h */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		6840060F14831E8B0026F828 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				6840061014831E9F0026F828 /* AppConfig.h */,
+				68400627148328750026F828 /* UITextView+Utils.h */,
+				68400628148328750026F828 /* UITextView+Utils.m */,
+				6840061114831E9F0026F828 /* AppConfig.m */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		68400613148325DD0026F828 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				68400614148325F30026F828 /* WelcomeViewController.h */,
+				68400615148325F30026F828 /* WelcomeViewController.m */,
+				68400617148326940026F828 /* ChatRoomViewController.h */,
+				68400618148326940026F828 /* ChatRoomViewController.m */,
+				684005D614831BE10026F828 /* AppDelegate.h */,
+				684005D714831BE10026F828 /* AppDelegate.m */,
+				684005DC14831BE10026F828 /* ViewController.h */,
+				684005DD14831BE10026F828 /* ViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		6840061A148326D30026F828 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6840061B148326E00026F828 /* Room.h */,
+				6840061C148326E00026F828 /* Room.m */,
+				6840061E148327590026F828 /* RoomDelegate.h */,
+				68400621148327730026F828 /* RemoteRoom.h */,
+				68400622148327730026F828 /* RemoteRoom.m */,
+				684006241483278E0026F828 /* LocalRoom.h */,
+				684006251483278E0026F828 /* LocalRoom.m */,
+			);
+			name = "Business Logic";
+			sourceTree = "<group>";
+		};
+		6840062A14832D1F0026F828 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6840062B14832D5B0026F828 /* WelcomeViewController.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				684005D214831BE10026F828 /* InfoPlist.strings in Resources */,
-				684005DB14831BE10026F828 /* MainStoryboard.storyboard in Resources */,
+				6840062C14832D5B0026F828 /* WelcomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +358,16 @@
 				684005D414831BE10026F828 /* main.m in Sources */,
 				684005D814831BE10026F828 /* AppDelegate.m in Sources */,
 				684005DE14831BE10026F828 /* ViewController.m in Sources */,
+				6840060514831D8E0026F828 /* Server.m in Sources */,
+				6840060814831DD20026F828 /* Connection.m in Sources */,
+				6840060C14831E1A0026F828 /* ServerBrowser.m in Sources */,
+				6840061214831E9F0026F828 /* AppConfig.m in Sources */,
+				68400616148325F30026F828 /* WelcomeViewController.m in Sources */,
+				68400619148326940026F828 /* ChatRoomViewController.m in Sources */,
+				6840061D148326E00026F828 /* Room.m in Sources */,
+				68400623148327730026F828 /* RemoteRoom.m in Sources */,
+				684006261483278F0026F828 /* LocalRoom.m in Sources */,
+				68400629148328750026F828 /* UITextView+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,14 +396,6 @@
 				684005D114831BE10026F828 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		684005D914831BE10026F828 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				684005DA14831BE10026F828 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		684005EE14831BE20026F828 /* InfoPlist.strings */ = {

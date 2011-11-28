@@ -7,9 +7,30 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Room.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class ViewController, ChatRoomViewController, WelcomeViewController;
 
-@property (strong, nonatomic) UIWindow *window;
+@interface AppDelegate : NSObject <UIApplicationDelegate> {
+    UIWindow *window;
+    ViewController *viewController;
+    ChatRoomViewController *chatRoomViewController;
+    WelcomeViewController *welcomeViewController;
+}
+
+@property(nonatomic, retain) IBOutlet UIWindow *window;
+@property(nonatomic, retain) IBOutlet ViewController *viewController;
+@property(nonatomic, retain) IBOutlet ChatRoomViewController *chatRoomViewController;
+@property(nonatomic, retain) IBOutlet WelcomeViewController *welcomeViewController;
+
+
+// Main instance of the app delegate
++ (AppDelegate*)getInstance;
+
+// Show chat room
+- (void)showChatRoom:(Room*)room;
+
+// Go back to the room selection
+- (void)showRoomSelection;
 
 @end

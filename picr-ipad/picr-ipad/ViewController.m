@@ -7,54 +7,106 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
+#import "LocalRoom.h"
+#import "RemoteRoom.h"
+
+
+// Private properties
+@interface ViewController ()
+@property(nonatomic,retain) ServerBrowser* serverBrowser;
+@end
+
 
 @implementation ViewController
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
+@synthesize serverBrowser;
+
+// View loaded
+- (void)viewDidLoad {
+    serverBrowser = [[ServerBrowser alloc] init];
+    serverBrowser.delegate = self;
 }
 
-#pragma mark - View lifecycle
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+// Cleanup
+- (void)dealloc {
+    self.serverBrowser = nil;
+    [super dealloc];
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+
+// View became active, start your engines
+- (void)activate {
+    // Start browsing for services
+    [serverBrowser start];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
+
+// User is asking to create new chat room
+- (IBAction)createNewChatRoom:(id)sender {
+    // Stop browsing for servers
+    [serverBrowser stop];
+    
+    // Create local chat room and go
+    LocalRoom* room = [[[LocalRoom alloc] init] autorelease];
+    [[AppDelegate getInstance] showChatRoom:room];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
+
+// User is asking to join an existing chat room
+- (IBAction)joinChatRoom:(id)sender {
+    // Figure out which server is selected
+    NSIndexPath* currentRow = [serverList indexPathForSelectedRow];
+    if ( currentRow == nil ) {
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Which chat room?" message:@"Please select which chat room you want to join from the list above" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+        return;
+    }
+    
+    NSNetService* selectedServer = [serverBrowser.servers objectAtIndex:currentRow.row];
+    
+    // Create chat room that will connect to that chat server
+    RemoteRoom* room = [[[RemoteRoom alloc] initWithNetService:selectedServer] autorelease];
+    
+    // Stop browsing and switch over to chat room
+    [serverBrowser stop];
+    [[AppDelegate getInstance] showChatRoom:room];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
+
+#pragma mark -
+#pragma mark ServerBrowserDelegate Method Implementations
+
+- (void)updateServerList {
+    [serverList reloadData];
 }
 
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
+
+#pragma mark -
+#pragma mark UITableViewDataSource Method Implementations
+
+// Number of rows in each section. One section by default.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [serverBrowser.servers count];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return YES;
+
+// Table view is requesting a cell
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString* serverListIdentifier = @"serverListIdentifier";
+    
+    UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:serverListIdentifier];
+	if (cell == nil) {
+		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:serverListIdentifier] autorelease];
+	}
+    
+    // Set cell's text to server's name
+    NSNetService* server = [serverBrowser.servers objectAtIndex:indexPath.row];
+    cell.text = [server name];
+    
+    return cell;
 }
 
 @end
