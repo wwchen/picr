@@ -30,6 +30,9 @@
 		684006261483278F0026F828 /* LocalRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 684006251483278E0026F828 /* LocalRoom.m */; };
 		68400629148328750026F828 /* UITextView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 68400628148328750026F828 /* UITextView+Utils.m */; };
 		6840062C14832D5B0026F828 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6840062B14832D5B0026F828 /* WelcomeViewController.xib */; };
+		6840062E148333A50026F828 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6840062D148333A50026F828 /* ViewController.xib */; };
+		68400630148336C80026F828 /* ChatRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6840062F148336C80026F828 /* ChatRoomViewController.xib */; };
+		68400632148430130026F828 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68400631148430130026F828 /* MainWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,9 @@
 		68400627148328750026F828 /* UITextView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Utils.h"; sourceTree = "<group>"; };
 		68400628148328750026F828 /* UITextView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Utils.m"; sourceTree = "<group>"; };
 		6840062B14832D5B0026F828 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		6840062D148333A50026F828 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		6840062F148336C80026F828 /* ChatRoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatRoomViewController.xib; sourceTree = "<group>"; };
+		68400631148430130026F828 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,11 +151,11 @@
 		684005CD14831BE10026F828 /* picr-ipad */ = {
 			isa = PBXGroup;
 			children = (
-				6840062A14832D1F0026F828 /* Resources */,
 				6840061A148326D30026F828 /* Business Logic */,
+				6840060014831D260026F828 /* Networking */,
 				68400613148325DD0026F828 /* UI */,
 				6840060F14831E8B0026F828 /* Misc */,
-				6840060014831D260026F828 /* Networking */,
+				6840062A14832D1F0026F828 /* Resources */,
 				684005CE14831BE10026F828 /* Supporting Files */,
 			);
 			path = "picr-ipad";
@@ -245,6 +251,9 @@
 			isa = PBXGroup;
 			children = (
 				6840062B14832D5B0026F828 /* WelcomeViewController.xib */,
+				6840062F148336C80026F828 /* ChatRoomViewController.xib */,
+				6840062D148333A50026F828 /* ViewController.xib */,
+				68400631148430130026F828 /* MainWindow.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -321,6 +330,9 @@
 			files = (
 				684005D214831BE10026F828 /* InfoPlist.strings in Resources */,
 				6840062C14832D5B0026F828 /* WelcomeViewController.xib in Resources */,
+				6840062E148333A50026F828 /* ViewController.xib in Resources */,
+				68400630148336C80026F828 /* ChatRoomViewController.xib in Resources */,
+				68400632148430130026F828 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
